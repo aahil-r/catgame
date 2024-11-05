@@ -27,6 +27,18 @@ class Cat:
         self.weight += 1
         self.age = 0.1
 
+    def play(self):
+        print(f'(self.name) is playing...')
+        self.energy -= 7
+        self.weight -= 1
+        self.age = 0.1
+
+    def sleep(self):
+        print(f'(self.name) is sleeping...')
+        self.energy += 100
+        self.weight += 0.1
+        self.age = 0.1
+
 # We will now make 2 cats
 # Each one is an instance of the Cat class
 sid = Cat('Sid', 'Black')
